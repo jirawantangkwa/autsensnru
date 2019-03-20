@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C414CCA02241FDF80053CE09 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414CC9F2241FDF80053CE09 /* RegisterViewController.swift */; };
 		C4A3355D2240E89700C2FB3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3355C2240E89700C2FB3A /* AppDelegate.swift */; };
 		C4A3355F2240E89700C2FB3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3355E2240E89700C2FB3A /* ViewController.swift */; };
 		C4A335622240E89700C2FB3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A335602240E89700C2FB3A /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C414CC9F2241FDF80053CE09 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C4A335592240E89700C2FB3A /* AuthenSSRU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthenSSRU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A3355C2240E89700C2FB3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4A3355E2240E89700C2FB3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				C4A3355C2240E89700C2FB3A /* AppDelegate.swift */,
 				C4A3355E2240E89700C2FB3A /* ViewController.swift */,
+				C414CC9F2241FDF80053CE09 /* RegisterViewController.swift */,
 				C4A335602240E89700C2FB3A /* Main.storyboard */,
 				C4A335632240E89900C2FB3A /* Assets.xcassets */,
 				C4A335652240E89900C2FB3A /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C414CCA02241FDF80053CE09 /* RegisterViewController.swift in Sources */,
 				C4A3355F2240E89700C2FB3A /* ViewController.swift in Sources */,
 				C4A3355D2240E89700C2FB3A /* AppDelegate.swift in Sources */,
 			);
