@@ -131,7 +131,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="vwb-9m-pNB" kind="show" id="NVc-YE-5MF"/>
+                        <segue destination="vwb-9m-pNB" kind="show" identifier="GoRegister" id="NVc-YE-5MF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
