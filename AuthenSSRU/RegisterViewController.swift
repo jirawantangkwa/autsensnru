@@ -47,7 +47,7 @@ class RegisterViewController: UIViewController {
         if (name.count == 0)||(user.count == 0)||(password.count == 0) {
             myAlert(titleString: "Have Space", messageString: "Please Fill All Bland")
         } else {
-            
+            uploadData(name: name, user: user, password: password)
         }
         
     } //upload Button
@@ -70,11 +70,29 @@ class RegisterViewController: UIViewController {
         
         let uriString:String = "https://www.androidthai.in.th/snru/addDatajirawan.php?isAdd=true&Name=\(name)&User=\(user)&Password=\(password)"
         
-        
+        let urt = URL(string: uriString)
+        let request = NSMutableURLRequest(url: urt!)
+        let task = URLSession.shared.dataTask(with: request as URLRequest) { data,response,error in
+            
+            if error !=  nil {
+                print("Error")
+            } else {
+                
+                if let tesData = data {
+                    
+                    let canReadData = NSString(data: tesData, encoding: String.Encoding.utf8.rawValue)
+                    print("canRead ==> \(String(describing:canReadData))")
+                    
+                }
+            
+            }  // if1
+            
+        } // end Task
+            task.resume()
         
     }
     
-    @IBAction func backButton(_ sender: UIBarButtonItem) {
+        func backButton(_ sender: UIBarButtonItem) {
         
         print("You Click Back")
         performSegue(withIdentifier: "BackMain", sender: self)
